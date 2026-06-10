@@ -1,0 +1,15 @@
+[package]
+name = "wayland-shell"
+version = "0.1.0"
+edition = "2021"
+authors = ["Sorabbyngo OS Team"]
+description = "AI-native Wayland compositor and desktop shell for Sorabbyngo OS"
+
+[dependencies]
+anyhow = "1"
+thiserror = "1"
+tokio = { version = "1", features = ["full"] }
+tracing = "0.1"
+smithay = { version = "0.3", features = ["wayland_frontend", "backend_winit"] }
+wgpu = "0.19"
+serde = { version = "1", features = ["derive"] }
